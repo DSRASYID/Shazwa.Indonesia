@@ -15,7 +15,7 @@ const currentDir = path.dirname(__filename);
 
 // Gunakan variabel currentDir untuk mengakses direktori saat ini
 // Use Client App
-app.use(express.static(path.join(currentDir, '/client/build')));
+app.use(express.static(path.join(currentDir, '/client/build/')));
 
 // Render client for any path
 app.get('/', (req, res) =>
